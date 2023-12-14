@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Group_Login_Inventory]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test Groups(failed)">
+    <groups>
+      <run>
+        <include name="Sanity"/>
+        <exclude name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testCases.Inventory_Page2_Test">
+        <methods>
+          <include name="verifytwitterLogoTest"/>
+        </methods>
+      </class> <!-- testCases.Inventory_Page2_Test -->
+      <class name="testCases.LoginPageTest">
+        <methods>
+          <include name="loginToApplicationTest"/>
+          <include name="verifyTitileOfApplicationTest"/>
+        </methods>
+      </class> <!-- testCases.LoginPageTest -->
+    </classes>
+  </test> <!-- Test Groups(failed) -->
+</suite> <!-- Failed suite [Group_Login_Inventory] -->
